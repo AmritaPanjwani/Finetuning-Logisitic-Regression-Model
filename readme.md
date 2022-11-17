@@ -1,4 +1,11 @@
 ### Finetuning Hyperparameters of Logistic regression ML Algorithm
+The basic Logisitic Regression model is a supervised classification ML algorithm, that ideally works on binary classification problems.
+There are various hyperparameters that can be modified in order to fine tune the model performance and obtain the best possible results.
+List of hyperparameters used in the below script are:
+- Penalty: In order to optmize the performance of the model and trace the important features different penalties can be employed. Lasso (L1) , Ridge (L2) and ElasticNet are the three types of penalties that can be used.
+- Solver: Since Logisitic Regression algorithm works on optimization technique, various optmization methods are available to be used in the model. The selection of right optimizer solver depends on the penalty. Different optmizer solvers are compatible with different penalty types and hence proper selection of the optimizer solver is important.
+- C: C is called the regularization parameter. Technically C is inverse of the penalty term. But an easier way to understand C is to relate it to the model complexity. C denotes the model complexity. Smaller values of C indicate a simple model and larger values of C indicate complex models. Selecting the optimum value of C to create a balanced model is must.
+- max_iter: This parameter specifies the maximum number of iterations required to reach the minima. If the number of iterations needed to converge is higher than the max_iter provided the model would fail to converge and hence the true minima of the loss value is not achieved. This hinders the model in achieving the best possible performance. Hence providing a wide range of max_iter values helps the model to achieve better performance.
 
 #### Installing Dependencies
 
